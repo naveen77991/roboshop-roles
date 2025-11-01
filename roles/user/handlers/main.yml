@@ -1,0 +1,5 @@
+---
+- name: restart user
+  ansible.builtin.service:
+    name: user
+    state: restarted
