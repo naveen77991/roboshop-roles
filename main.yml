@@ -1,6 +1,6 @@
 ---
 - name: Install and configure component
-  hosts: mongodb
+  hosts: "{{ component }}"
   become: yes
   roles:
     - "{{ component }}"
