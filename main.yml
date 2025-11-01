@@ -1,0 +1,6 @@
+---
+- name: Install and configure "{{ component }}"
+  hosts: " {{ component }}"
+  become: yes
+  roles:
+    - " {{ component }}"
